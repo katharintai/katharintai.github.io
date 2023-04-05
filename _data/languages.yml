@@ -1,0 +1,7 @@
+# file used for footer logic
+en:
+    slug: en
+    language: english
+de:
+    slug: de
+    langauge: deutsch
