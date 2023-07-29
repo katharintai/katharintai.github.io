@@ -37,14 +37,3 @@
         {% endfor %}
     {%- endif-%}
 </footer>
-
-<!-- detect default lang in browser-->
-{% if false %}
-<script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', function () {
-        const userLang = navigator.language || navigator.userLanguage;
-        const isGerman = userLang.includes('de');
-        window.location.href = isGerman ? "{{ site.url }}{{site.baseurl}}/de/" : "{{ site.url }}{{site.baseurl}}/en/";
-    }, false);
-</script>
-{% endif %}
