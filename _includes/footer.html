@@ -39,7 +39,7 @@
 </footer>
 
 <!-- detect default lang in browser-->
-{% unless page.lang %}
+{% if false %}
 <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
         const userLang = navigator.language || navigator.userLanguage;
@@ -47,4 +47,4 @@
         window.location.href = isGerman ? "{{ site.url }}{{site.baseurl}}/de/" : "{{ site.url }}{{site.baseurl}}/en/";
     }, false);
 </script>
-{% endunless %}
+{% endif %}
