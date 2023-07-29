@@ -6,3 +6,4 @@ vendor
 docs/*
 !docs/.gitkepp
 **/.DS_Store
+.vscode
