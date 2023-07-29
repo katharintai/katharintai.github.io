@@ -5,3 +5,4 @@ _site
 vendor
 docs/*
 !docs/.gitkepp
+**/.DS_Store
