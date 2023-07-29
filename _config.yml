@@ -22,3 +22,20 @@ destination: ./docs
 theme: minima
 plugins:
     - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Language setup
+default_language: en
+
+collections_dir: content
+collections:
+  en:
+    output: true
+    permalink: /:path
+  de:
+    output: true
+    permalink: /:collection/:path
+    
