@@ -27,6 +27,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor/bundle/
 
 # Language setup
 default_language: en
