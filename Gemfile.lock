@@ -70,7 +70,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.9)
-  jekyll-feed (~> 0.15)
+  jekyll-feed (~> 0.17)
   kramdown (~> 2.4)
   kramdown-parser-gfm
   minima (~> 2.5)
