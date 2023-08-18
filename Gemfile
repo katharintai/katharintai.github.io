@@ -11,7 +11,9 @@ source "https://rubygems.org"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll", "~> 3.9"
+gem "kramdown", "~> 2.4"
+gem "kramdown-parser-gfm"
 gem "minima", "~> 2.5"
 
 group :jekyll_plugins do
