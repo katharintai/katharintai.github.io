@@ -1,34 +1,25 @@
-{%- if page.lang == 'en'-%}
-        {%- assign pages_translated = site.de-%}
-        {%- assign translation_path = '_de/' -%}
-        {%- assign prefix = "de/" %}
-        {%- assign page_url = page.path | replace: '_en/', '' | replace: '.md', '' %}
-    {%- else -%}
-        {%- assign pages_translated = site.en -%}
-        {%- assign translation_path= '_en/' -%}
-        {%- assign prefix = "" %}
-        {%- assign page_url = page.path | replace: '_de/', '' | replace: '.md', '' %}
-{%- endif-%}
+{% include base_path %}
 
-{%- for p in pages_translated -%}
-    {%- assign translation_page_url = p.path | replace: translation_path, '' | replace: '.md', '' -%}
-    {%- if page_url ==  translation_page_url -%}
-        {%- assign isTranslated = true -%}
-    {%- endif -%}
-{%- endfor -%}
+{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.data.ui-text[site.locale].follow_label %}
+      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.bitbucket %}
+      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+    {% endif %}
+    {% if site.atom_feed.hide != true %}
+    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
 
-<footer class="lang-options">
-    {%- if isTranslated -%}
-        <em>{{ site.data.translations['langToggle'][page.lang]}} </em>
-        {%- for lang in site.data.languages -%}
-            {%- if lang[0] != page.lang -%}
-                <a href="{{site.baseurl}}/{{prefix}}{{page_url}} " title="switch language {{lang[0]}}"> {{ lang[0] }}</a>
-            {%- else -%}
-                <span> {{page.lang}} </span>
-            {%- endif -%}
-            {%- if forloop.index == 1 -%}
-                <span> | </span>
-            {%- endif -%}
-        {% endfor %}
-    {%- endif-%}
-</footer>
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
+  Site last updated {{ "now" | date: '%Y-%m-%d' }}
+</div>
