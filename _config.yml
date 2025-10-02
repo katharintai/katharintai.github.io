@@ -13,7 +13,7 @@ title                    : "Katharin Tai"
 title_separator          : "-"
 name                     : &name "Katharin Tai"
 description              : &description "PhD candidate in Political Science"
-url                      : https://katharintai.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://katharintai.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "katharintai/katharintai.github.io/"
 
@@ -23,7 +23,7 @@ repository               : "katharintai/katharintai.github.io/"
 author:
   # Biographic information
   avatar           : "profile1.png"
-  name             : "Basics"
+  name             : "Katharin Tai"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate, Political Science, researching the politics of technology with a regional focus on China and East Germany"
   location         : "Cambridge, MA / Berlin"
