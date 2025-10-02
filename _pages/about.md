@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a PhD candidate in [Political Science at MIT](https://polisci.mit.edu/people/katharin-tai) and a dissertation fellow at the [Program for Advanced German and European Studies](https://www.fu-berlin.de/en/sites/bprogram/index.html) at Free University Berlin for the 2025/26 academic year. My research using both qualitative and quantitative approaches centers on the politics of emerging technologies, especially their interaction with authoritarian and bureaucratic politics, with a regional focus on contemporary China and historical East Germany. 
+My name is Katharin Tai and I am a PhD candidate in [Political Science at MIT](https://polisci.mit.edu/people/katharin-tai) and a dissertation fellow at the [Program for Advanced German and European Studies](https://www.fu-berlin.de/en/sites/bprogram/index.html) at Free University Berlin for the 2025/26 academic year. My research using both qualitative and quantitative approaches centers on the politics of emerging technologies, especially their interaction with authoritarian and bureaucratic politics, with a regional focus on contemporary China and historical East Germany. 
 
 My book-length dissertation, "The Paper Ghost in the High-Tech Machine", develops a causal theory of how digital technologies are integrated into the state to increase state capacity. It is based on extensive archival research and fieldwork in Germany and China conducted from 2023 to 2025. 
 
