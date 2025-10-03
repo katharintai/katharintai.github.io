@@ -4,10 +4,10 @@ title: "Research"
 author_profile: true
 ---
 
-This is a page not in the menu. You can use markdown in this page.
+Page about my research agenda
 
-Heading 1
+Project 1
 ======
 
-Heading 2
+Project 2
 ======
