@@ -1,5 +1,5 @@
 ---
-layout: archive
+#layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+You can access a PDF version of my CV here.
+
+<!-- {% include base_path %}
 
 Education
 ======
@@ -62,3 +64,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+ -->
